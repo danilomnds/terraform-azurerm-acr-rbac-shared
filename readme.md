@@ -34,12 +34,12 @@ module "rbac_ad_groups" {
   source = "git::https://github.com/danilomnds/terraform-azurerm-acr-rbac-shared?ref=v1.0.0"
   scope = <acr id>
   role_assignment = {
-    GRP_AZR_TIMPDVPRD-Admin = {
-      # this command help you to get the object id az ad group show --group GRP_AZR_TIMPDVPRD-Admin --query objectId --out tsv
+    <group name> = {
+      # this command help you to get the object id az ad group show --group <group name> --query objectId --out tsv
       principal_id = <group id on Azure AD>
     }
     # group name
-    <GRP_AZR_WSO2PRD-Admin> = {
+    <group name> = {
       principal_id = <group id on Azure AD>
     }
   }
