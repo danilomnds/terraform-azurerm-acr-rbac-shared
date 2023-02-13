@@ -53,7 +53,7 @@ module "rbac_ad_groups" {
 | scope | ACR id | `string` | n/a | `Yes` |
 | role_assignment | possible values for each assignment on Azure (full list of parameters below) | `string` | n/a | `Yes` |
 
-## List of parameters for that can be defined in each assignment
+## List of parameters that can be defined in each assignment
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
@@ -66,5 +66,5 @@ module "rbac_ad_groups" {
 | skip_service_principal_aad_check | skip the Azure AD account verification | `bool` | `false` | No |
 
 ## Documentation
-Terraform Role Assigment: <br>
+Terraform Role Assignment: <br>
 [https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/role_assignment](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/role_assignment)<br>
